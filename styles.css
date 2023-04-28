@@ -50,10 +50,52 @@ service-img{
     width: 100%;
     max-height: 200px !important;
 }
-@media (max-width:900px) {
-.one{
-    
-    width: 40%;
+.containerr{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
 }
-    
+
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-section .card{
+    flex: 1;
+    margin: 20px 20px;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+.content-section .card img{
+    width: 100%;
+    height: auto;
+}
+
+.content-section .card h2{
+    margin: 10px 0px;
+    font-size: 28px;
+    color: chocolate;
+    font-family: sans-serif;
+}
+
+.content-section .card p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+@media screen and (max-width:768px){
+    .content-section{
+        flex-direction: column;
+    }
 }
